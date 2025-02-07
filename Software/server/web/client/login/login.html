@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client Login</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../src/style.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="../../src/warnings/warnings.css">
+        <!-- JS -->
+        <script src="../../src/warnings/warnings.js"></script>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Accesso Cliente</h2>
+            <form action="login.php" method="post">
+                <label for="codiceChiavetta">Codice Chiavetta:</label>
+                <input type="text" id="codiceChiavetta" name="codiceChiavetta" required>
+
+                <label for="pin">PIN:</label>
+                <input type="password" id="pin" name="pin" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <a href="../../index.php">Exit</a>
+        </div>
+    </body>
+</html>

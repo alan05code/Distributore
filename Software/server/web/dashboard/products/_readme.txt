@@ -1,0 +1,1 @@
+Le immagini vanno salvate in QUESTA cartella e poi inserite nella sezione ADMIN -> Gestione Prodotti

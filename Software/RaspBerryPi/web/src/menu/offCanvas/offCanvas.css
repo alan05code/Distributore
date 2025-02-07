@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&display=swap");
+
+@keyframes hover {
+  50% {
+    transform: translateX(10px);
+  }
+}
+.offcanvas-menu > div {
+  top: 25px;
+  left: 25px;
+  position: fixed;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offcanvas-menu > div label {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+.offcanvas-menu div > form input[type=submit] {
+  padding-left: 60px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-family: "Monoton", cursive;
+  background: linear-gradient(-90deg, #d6d6d6 30%, #3d00a9 110%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.offcanvas-menu div label span,
+.offcanvas-menu div label span::before,
+.offcanvas-menu div label span::after {
+  transition: background 0.3s, transform 0.3s;
+}
+.offcanvas-menu div label span,
+.offcanvas-menu div label span::before,
+.offcanvas-menu div label span::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background: #b3b3b3;
+}
+.offcanvas-menu div label span::before {
+  transform: translateY(-12px);
+}
+.offcanvas-menu div label span::after {
+  transform: translateY(12px);
+}
+.offcanvas-menu div label > form input[type=submit] {
+  left: 70px;
+}
+
+.offcanvas-menu nav {
+  position: fixed;
+  height: 100%;
+  width: 270px;
+  left: -270px;
+  overflow: hidden;
+  background: transparent;
+  transition: 0.3s ease;
+  padding: 30px 30px;
+}
+.offcanvas-menu nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offcanvas-menu nav > div label {
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.offcanvas-menu nav > div label span,
+.offcanvas-menu nav > div label span:before,
+.offcanvas-menu nav > div label span:after {
+  background: #b3b3b3;
+}
+.offcanvas-menu nav > ul {
+  margin-top: 30px;
+}
+.offcanvas-menu nav > ul form {
+  text-align: start;
+}
+.offcanvas-menu nav > ul form li {
+  display: inline-flex;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 0;
+  transform: translateX(-30px);
+  transition: 0.4s ease;
+}
+.offcanvas-menu nav > ul form li a {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+}
+.offcanvas-menu nav > ul form li img {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-position: center;
+  background-size: 100%;
+  margin-right: 10px;
+  border: 0;
+  background-repeat: no-repeat;
+}
+.offcanvas-menu nav > ul li:hover {
+  animation: hover 0.5s;
+}
+.offcanvas-menu input[type=checkbox] {
+  display: none;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ div label {
+  opacity: 0;
+  pointer-events: none;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav {
+  left: 0;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav div label span {
+  background: transparent;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav div label span:before {
+  transform: rotate(-45deg);
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav div label span:after {
+  transform: rotate(45deg);
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav div label span:before,
+.offcanvas-menu input[type=checkbox]:checked ~ nav div label span:after {
+  transition-delay: 0.2s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li {
+  opacity: 1;
+  transform: translateX(-5px);
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(6) {
+  transition-delay: 0.6s;
+}
+.offcanvas-menu input[type=checkbox]:checked ~ nav ul li:nth-child(7) {
+  transition-delay: 0.7s;
+}

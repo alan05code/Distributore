@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Franklin Gothic Medium', 'Trebuchet MS', sans-serif, Arial;
+}
+::selection {
+    background-color: #80399f;
+    color: white;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    background: #16161a;
+    color: #f3f3f3;
+}
+
+h1, h2, h3 {
+    color: #80399f;
+    text-align: center;
+}
+
+h4 {
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #80399f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.refresh {
+    display: flex;
+    justify-content: center;
+}
+  
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #16161a;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"], button {
+    background-color: #80399f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #80399f;
+}
+
+#table-shortcut {
+    color: #16161a;
+}
+
+#refresh-btn {
+    text-align: center;
+    display: block;
+}
+
+.selected {
+    background-color: #f2f2f2;
+}
+
+.change-product-image {
+    display: inline;
+    align-items: center;
+    margin: auto;
+}
+.change-product-image > input[type="file"] {
+    display: none;
+    position: absolute;
+}
+.change-product-image > label img {
+    max-width: 50px;
+    max-height: 50px;
+}

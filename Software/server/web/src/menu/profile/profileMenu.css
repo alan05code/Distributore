@@ -1,0 +1,210 @@
+#profile-icon {
+  position: absolute;
+  cursor: pointer;
+}
+
+#profile-icon input[type=submit] {
+  background-size: 75px;
+  padding: 0;
+  width: 50px;
+  height: 40px;
+}
+
+#profile-show-saldo {
+  white-space: pre-line;
+  top: 25px;
+  right: 75px;
+  position: fixed;
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+@keyframes hover {
+  50% {
+      transform: translateX(10px);
+  }
+}
+
+.profile-menu > div {
+  top: 25px;
+  right: 25px;
+  width: 135px;
+  height: 40px;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.profile-menu > div label {
+  top: 25px;
+  right: 25px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  
+  background-color: #4d4d4d;
+  background-image: url('img/profileMenu.png');
+  background-position: center;
+  background-size: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 0;
+  background-repeat: no-repeat;
+}
+.profile-menu > div form input[type=submit] {
+  padding: 0;
+  right: 70px;
+  height: 40px;
+  width: 80px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  text-align: center;
+  background: #b3b3b3;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-menu div label span,
+.profile-menu div label span::before,
+.profile-menu div label span::after {
+  transition: background 0.3s, transform 0.3s;
+}
+.profile-menu div label span,
+.profile-menu div label span::before,
+.profile-menu div label span::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background: #b3b3b3;
+}
+.profile-menu div label span::before {
+  transform: translateY(-12px);
+}
+.profile-menu div label span::after {
+  transform: translateY(12px);
+}
+.profile-menu nav {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  right: -250px;
+  overflow: hidden;
+  background: transparent;
+  transition: 0.3s ease;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.profile-menu nav > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.profile-menu nav > div a {
+  padding-right: 15px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  background: linear-gradient(-90deg, #d6d6d6 30%, #ffffff 110%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-menu nav > div label {
+  width: 30px;
+  height: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.profile-menu nav > ul {
+  margin-top: 30px;
+}
+.profile-menu nav > ul form {
+  width: 220px;
+  text-align: end;
+}
+.profile-menu nav > ul form li {
+  display: inline-flex;
+  padding: 10px 0;
+  text-align: right;
+  transform: translateX(-30px);
+  transition: 0.4s ease;
+}
+.profile-menu nav > ul form li img {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-position: center;
+  background-size: 100%;
+  margin-left: 10px;
+  border: 0;
+  background-repeat: no-repeat;
+}
+.profile-menu nav > ul form li a {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+.profile-menu nav > ul li:hover {
+  animation: hover 0.5s;
+}
+.profile-menu input[type=checkbox] {
+  display: none;
+}
+.profile-menu input[type=checkbox]:checked ~ div label {
+  opacity: 0;
+  pointer-events: none;
+}
+.profile-menu input[type=checkbox]:checked ~ nav {
+  right: 0;
+}
+.profile-menu input[type=checkbox]:checked ~ nav label span {
+  background: transparent;
+}
+.profile-menu input[type=checkbox]:checked ~ nav label span:before {
+  transform: rotate(-45deg);
+}
+.profile-menu input[type=checkbox]:checked ~ nav label span:after {
+  transform: rotate(45deg);
+}
+.profile-menu input[type=checkbox]:checked ~ nav label span:before,
+.profile-menu input[type=checkbox]:checked ~ nav label span:after {
+  transition-delay: 0.2s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul form li {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(6) {
+  transition-delay: 0.6s;
+}
+.profile-menu input[type=checkbox]:checked ~ nav ul li:nth-child(7) {
+  transition-delay: 0.7s;
+}

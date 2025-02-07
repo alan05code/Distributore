@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Distributore</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="warnings/warnings.css">
+        <link rel="stylesheet" href="menu/profile/profileMenu.css">
+        <link rel="stylesheet" href="../dashboard/slot.css">
+        <!-- JS -->
+        <script type="text/JavaScript" src="../dashboard/slot-table.js"></script>
+        <script src="warnings/warnings.js"></script>
+    </head>
+    <body>
+        <header class='profile-menu'>
+            <input type="checkbox" id="profile-toogle-menu" />
+
+            <div>
+                <label for="profile-toogle-menu" class="profile-toogle-open"></label>
+            </div>
+
+            <nav>
+                <div>
+                    <a><i class="profile- fab fa-css3-alt"></i>LOGIN</a>
+
+                    <label for="profile-toogle-menu" class="profile-toogle-close">
+                        <span></span>
+                    </label>
+                </div>
+                <ul>
+                    <form method="post" action="accounts/login.php">
+                        <li><button type="submit" name="Admin" value="Admin">Amministratore</button><img src="../src/menu/profile/img/index/admin.png"></li>
+                        <li><button type="submit" name="Client" value="Client">Cliente</button><img src="../src/menu/profile/img/index/client.png"></li>
+                    </form>
+                </ul>
+            </nav>
+        </header>
+        
+        <br>
+        <h1>Distributore</h1>
+        <br>
+
+        <div id="distributoreTableContainer"></div>
+
+        <a id="refresh-btn" href="index.html">Aggiorna</a><br>
+    </body>
+</html>
